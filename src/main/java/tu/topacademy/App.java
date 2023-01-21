@@ -8,15 +8,13 @@ public class App
 {
     public static void main( String[] args )
     {
-        Human h1 =new Human();
-        Builder b1 = new Builder();
-        Sailor s1 = new Sailor();
-        Pilot p1 = new Pilot();
+        Tiger t1 = new Tiger();
+        Crocodile c1 = new Crocodile();
+        Kenguru k1 = new Kenguru();
 
-        h1.showInfo();
-        b1.showInfo();
-        s1.showInfo();
-        p1.showInfo();
+        t1.showInfo();
+        c1.showInfo();
+        k1.showInfo();
     }
 }
 
