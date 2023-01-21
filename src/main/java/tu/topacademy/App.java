@@ -5,14 +5,26 @@ package tu.topacademy;
  */
 public class App {
     public static void main(String[] args) {
-        Product product1 = new Product();
-        Product product2 = new Product("Процессор",100,99);
+        Teapot t1 = new Teapot();
+        Microwave m1 = new Microwave();
+        Automobile a1 = new Automobile();
+        Ship s1 = new Ship();
 
-        product2.showPrice();
-
-        product1.declarePrice();
-        product1.decreacePrice();
-        product1.showPrice();
+        t1.show();
+        t1.desc();
+        t1.sound();
+        System.out.println("----------------------");
+        m1.show();
+        m1.desc();;
+        m1.sound();
+        System.out.println("----------------------");
+        a1.show();
+        a1.desc();
+        a1.sound();
+        System.out.println("----------------------");
+        s1.show();
+        s1.desc();
+        s1.sound();
     }
 }
 
