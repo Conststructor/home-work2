@@ -1,32 +1,38 @@
 package tu.topacademy;
 
-import java.util.Arrays;
 import java.util.Random;
 
-public class Array implements IMath {
-
+public class Array implements ISort {
     Random random = new Random();
     int[] arr = random.ints(10, -100, 100).toArray();
 
-    public float Avg() {
-        float sum = 0;
-        for (int number : arr) {
-            sum += number;
+    public void sortAsc() {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
         }
-        return sum / arr.length;
     }
 
-    public int Max() {
-        return Arrays.stream(this.arr).max().getAsInt();
-    }
-
-    public int Min() {
-        return Arrays.stream(this.arr).min().getAsInt();
+    public void sortDesc() {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
     }
 
     public void printArray() {
-        for (int number :
-                arr) {
+        System.out.println();
+        for (int number : arr) {
             System.out.print(number + " ");
         }
     }

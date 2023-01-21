@@ -8,9 +8,10 @@ public class App {
         Array array = new Array();
 
         array.printArray();
-        System.out.println("\n"+array.Max());
-        System.out.println(array.Min());
-        System.out.println(array.Avg());
+        array.sortDesc();
+        array.printArray();
+        array.sortAsc();
+        array.printArray();
     }
 }
 
