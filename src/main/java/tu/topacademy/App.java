@@ -2,19 +2,17 @@ package tu.topacademy;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        Tiger t1 = new Tiger();
-        Crocodile c1 = new Crocodile();
-        Kenguru k1 = new Kenguru();
+public class App {
+    public static void main(String[] args) {
+        Product product1 = new Product();
+        Product product2 = new Product("Процессор",100,99);
 
-        t1.showInfo();
-        c1.showInfo();
-        k1.showInfo();
+        product2.showPrice();
+
+        product1.declarePrice();
+        product1.decreacePrice();
+        product1.showPrice();
     }
 }
 
